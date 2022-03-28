@@ -4,40 +4,40 @@
                 <div class="card__container__grid">
                     <div class="card">
                         <div class="card__img5 card__img"></div>
-                        <h4 class="card__title no-margin">Velas</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a1}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quisquam?</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
                     <div class="card">
                         <div class="card__img6 card__img"></div>
-                        <h4 class="card__title no-margin">Vela de cumpleaños</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a2}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus.</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
                     <div class="card">
                         <div class="card__img7 card__img"></div>
-                        <h4 class="card__title no-margin">Graduación</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a3}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, rem.</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
                     <div class="card">
                         <div class="card__img8 card__img"></div>
-                        <h4 class="card__title no-margin">Cumpleaños</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a4}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, hic.</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
 
                     <div class="card">
                         <div class="card__img13 card__img"></div>
-                        <h4 class="card__title no-margin">Flores</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a5}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quisquam?</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
                     <div class="card">
                         <div class="card__img14 card__img"></div>
-                        <h4 class="card__title no-margin">Boda</h4>
+                        <h4 class="card__title no-margin">{{$store.state.adornos.a6}}</h4>
                         <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus.</p>
-                        <p class="price">$4.99</p>
+                        <p class="price">{{ $store.state.adornosPrice }}</p>
                     </div>
                 </div>
                 
@@ -52,22 +52,22 @@ export default {
 
 <style scoped>
 .card__img5{
-    background-image: url(../assets/vela.jpg);
+    background-image: url(../../assets/vela.jpg);
 }
 .card__img6{
-    background-image: url(../assets/vela-num.jpg);
+    background-image: url(../../assets/vela-num.jpg);
 }
 .card__img7{
-    background-image: url(../assets/graduacion.jpg);
+    background-image: url(../../assets/graduacion.jpg);
 }
 .card__img8{
-    background-image: url(../assets/cumpleaños.jpg);
+    background-image: url(../../assets/cumpleaños.jpg);
 }
 .card__img13{
-    background-image: url(../assets/flores.jpg);
+    background-image: url(../../assets/flores.jpg);
 }
 .card__img14{
-    background-image: url(../assets/boda.jpg);
+    background-image: url(../../assets/boda.jpg);
 }
 
 .card__container__grid{

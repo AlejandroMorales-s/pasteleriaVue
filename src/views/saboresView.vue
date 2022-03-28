@@ -6,7 +6,7 @@
     <footerComp />
 </template>
 <script>
-import saboresAll from '@/components/saboresAll.vue'
+import saboresAll from '@/components/sabores/saboresAll.vue'
 import navComp from '@/components/nav.vue'
 import footerComp from '@/components/footer.vue'
 

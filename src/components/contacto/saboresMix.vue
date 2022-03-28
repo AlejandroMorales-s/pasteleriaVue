@@ -101,27 +101,27 @@ export default {
     align-items: center;
 }
 .i1{
-    background-image: url(../assets/chocolate.jpg);
+    background-image: url(../../assets/chocolate.jpg);
 }
 .i2{
-    background-image: url(../assets/red-velvet.jpg);
+    background-image: url(../../assets/red-velvet.jpg);
 }
 .i3{
-    background-image: url(../assets/vainilla.jpg);
+    background-image: url(../../assets/vainilla.jpg);
 }
 .i4{
-    background-image: url(../assets/zanahoria.jpg);
+    background-image: url(../../assets/zanahoria.jpg);
 }
 .i5{
-    background-image: url(../assets/fresa.jpg);
+    background-image: url(../../assets/fresa.jpg);
 }
 .i6{
-    background-image: url(../assets/limon.jpg);
+    background-image: url(../../assets/limon.jpg);
 }
 .i8{
-    background-image: url(../assets/coco.webp);
+    background-image: url(../../assets/coco.webp);
 }
 .i9{
-    background-image: url(../assets/napolitano.jpg);
+    background-image: url(../../assets/napolitano.jpg);
 }
 </style>

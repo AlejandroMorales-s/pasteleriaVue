@@ -5,27 +5,27 @@
         <div class="card__container">
             <div class="card">
                 <div class="card__img5 card__img"></div>
-                <h4 class="card__title no-margin">Velas</h4>
+                <h4 class="card__title no-margin">{{$store.state.adornos.a1}}</h4>
                 <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quisquam?</p>
-                <p class="price">$4.99</p>
+                <p class="price"> {{ $store.state.adornosPrice }} </p>
             </div>
             <div class="card">
                 <div class="card__img6 card__img"></div>
-                <h4 class="card__title no-margin">Vela de cumpleaños</h4>
+                <h4 class="card__title no-margin">{{$store.state.adornos.a2}}</h4>
                 <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus.</p>
-                <p class="price">$4.99</p>
+                <p class="price">{{ $store.state.adornosPrice }}</p>
             </div>
             <div class="card">
                 <div class="card__img7 card__img"></div>
-                <h4 class="card__title no-margin">Graduación</h4>
+                <h4 class="card__title no-margin">{{$store.state.adornos.a3}}</h4>
                 <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, rem.</p>
-                <p class="price">$4.99</p>
+                <p class="price">{{ $store.state.adornosPrice }}</p>
             </div>
             <div class="card">
                 <div class="card__img8 card__img"></div>
-                <h4 class="card__title no-margin">Cumpleaños</h4>
+                <h4 class="card__title no-margin">{{$store.state.adornos.a4}}</h4>
                 <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, hic.</p>
-                <p class="price">$4.99</p>
+                <p class="price">{{ $store.state.adornosPrice }}</p>
             </div>
         </div>
         <router-link class="btn-width" to="/adornos">
@@ -44,15 +44,15 @@ export default {
 
 <style scoped>
     .card__img5{
-        background-image: url(../assets/vela.jpg);
+        background-image: url(../../assets/vela.jpg);
     }
     .card__img6{
-        background-image: url(../assets/vela-num.jpg);
+        background-image: url(../../assets/vela-num.jpg);
     }
     .card__img7{
-        background-image: url(../assets/graduacion.jpg);
+        background-image: url(../../assets/graduacion.jpg);
     }
     .card__img8{
-        background-image: url(../assets/cumpleaños.jpg);
+        background-image: url(../../assets/cumpleaños.jpg);
     }
 </style>

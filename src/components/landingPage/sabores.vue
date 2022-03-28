@@ -4,27 +4,27 @@
             <div class="card__container">
                 <div class="card">
                     <div class="card__img1 card__img"></div>
-                    <h4 class="card__title no-margin">Chocolate</h4>
+                    <h4 class="card__title no-margin">{{$store.state.sabores.s1}}</h4>
                     <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quisquam?</p>
-                    <p class="price">$24.99</p>
+                    <p class="price">{{ $store.state.saboresPrice }}</p>
                 </div>
                 <div class="card">
                     <div class="card__img2 card__img"></div>
-                    <h4 class="card__title no-margin">Vainilla</h4>
+                    <h4 class="card__title no-margin">{{$store.state.sabores.s2}}</h4>
                     <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, minus.</p>
-                    <p class="price">$24.99</p>
+                    <p class="price">{{ $store.state.saboresPrice }}</p>
                 </div>
                 <div class="card">
                     <div class="card__img3 card__img"></div>
-                    <h4 class="card__title no-margin">Fresa</h4>
+                    <h4 class="card__title no-margin">{{$store.state.sabores.s3}}</h4>
                     <p class="no-margin card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, rem.</p>
-                    <p class="price">$24.99</p>
+                    <p class="price">{{ $store.state.saboresPrice }}</p>
                 </div>
                 <div class="card">
                     <div class="card__img4 card__img"></div>
-                    <h4 class="card__title no-margin">Limón</h4>
+                    <h4 class="card__title no-margin">{{$store.state.sabores.s4}}</h4>
                     <p class="no-margin card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, hic.</p>
-                    <p class="price">$24.99</p>
+                    <p class="price">{{ $store.state.saboresPrice }}</p>
                 </div>
             </div>
             <router-link class="btn-width" to="/sabores">
@@ -44,16 +44,16 @@ export default {
 <style scoped>
     /*Sabores*/
     .card__img1{
-        background-image: url(../assets/chocolate.jpg);
+        background-image: url(../../assets/chocolate.jpg);
     }
     .card__img2{
-        background-image: url(../assets/vainilla.jpg);
+        background-image: url(../../assets/vainilla.jpg);
     }
     .card__img3{
-        background-image: url(../assets/fresa.jpg);
+        background-image: url(../../assets/fresa.jpg);
     }
     .card__img4{
-        background-image: url(../assets/limon.jpg);
+        background-image: url(../../assets/limon.jpg);
     }
 
 .card__info{

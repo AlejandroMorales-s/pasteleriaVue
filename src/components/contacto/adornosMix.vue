@@ -76,21 +76,21 @@ export default {
     cursor: pointer;
 }
 .i10{
-    background-image: url(../assets/vela.jpg);
+    background-image: url(../../assets/vela.jpg);
 }
 .i11{
-    background-image: url(../assets/vela-num.jpg);
+    background-image: url(../../assets/vela-num.jpg);
 }
 .i12{
-    background-image: url(../assets/graduacion.jpg);
+    background-image: url(../../assets/graduacion.jpg);
 }
 .i13{
-    background-image: url(../assets/cumpleaños.jpg);
+    background-image: url(../../assets/cumpleaños.jpg);
 }
 .i14{
-    background-image: url(../assets/flores.jpg);
+    background-image: url(../../assets/flores.jpg);
 }
 .i15{
-    background-image: url(../assets/boda.jpg);
+    background-image: url(../../assets/boda.jpg);
 }
 </style>

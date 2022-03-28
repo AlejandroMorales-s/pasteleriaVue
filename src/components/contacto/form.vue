@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import preguntasComp from '@/components/preguntas.vue'
-import saboresMix from '@/components/saboresMix.vue'
-import adornosMix from '@/components/adornosMix.vue'
+import preguntasComp from '@/components/contacto/preguntas.vue'
+import saboresMix from '@/components/contacto/saboresMix.vue'
+import adornosMix from '@/components/contacto/adornosMix.vue'
 
 export default {
     name: "formComp",

@@ -16,9 +16,9 @@
 <script>
 // @ is an alias to /src
 import navComp from '@/components/nav.vue'
-import formComp from '@/components/form.vue'
+import formComp from '@/components/contacto/form.vue'
 import footerComp from '@/components/footer.vue'
-import infoComp from '@/components/info.vue'
+import infoComp from '@/components/contacto/info.vue'
 
 
 export default {

@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+    </nav>
+    <router-view/>
 </template>
 
 <style>
@@ -39,64 +39,9 @@ body{
     line-height: 2;
     color: var(--negro);
 }
-.text__dark-mode{
-    color: var(--blanco);
-}
 
 /*Globales*/
-.barra{
-    height: 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo__img{
-    width: 10rem;
-    border-radius: 50%;
-}
-.nav{
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-.nav__enlace{
-    color: var(--blanco);
-    font-weight: 600;
-}
-@media (max-width: 480px) {
-    .barra{
-        flex-direction: column;
-    }
-    .nav{
-        flex-direction: column;
-        margin-top: 2rem;
-        width: 100%;
-    }
-    .contenedor{
-        margin: 0 0;
-        width: 100%;
-        height: fit-content;
-    }
-}
-.contenedor{
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-}
-.contenedor__bg{
-    background-color: var(--gris_claro);
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    padding-bottom: 5rem;
-}
-@media (max-width: 768px) {
-    .contenedor__bg{
-        width: 95%;
-    }
-}
+
 a{
     text-decoration: none;
 }
@@ -133,6 +78,69 @@ p{
 .centrar-texto{
     text-align: center;
 }
+
+/*Clases*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedor__bg{
+    background-color: var(--gris_claro);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding-bottom: 5rem;
+}
+@media (max-width: 768px) {
+    .contenedor__bg{
+        width: 95%;
+    }
+}
+
+
+.barra{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__img{
+    width: 10rem;
+    border-radius: 50%;
+}
+.nav{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.nav__enlace{
+    color: var(--blanco);
+    font-weight: 600;
+}
+@media (max-width: 480px) {
+    .barra{
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .contenedor{
+        margin: 0 0;
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+
+.title{
+    text-align: center;
+    margin: 6rem 0;
+}
 .price{
     margin: 1rem 0;
     font-weight: bold;
@@ -152,6 +160,8 @@ p{
 .btn-nav{
     margin-right: 0;
 }
+
+
 .card__container{
     display: flex;
     gap: 2.5rem;
@@ -178,10 +188,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.title{
-    text-align: center;
-    margin: 6rem 0;
-}
+
 .card__title{
     margin: 1rem 0;
 }

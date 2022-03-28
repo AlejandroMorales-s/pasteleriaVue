@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import adornosAll from '@/components/adornosAll.vue'
+import adornosAll from '@/components/adornos/adornosAll.vue'
 import navComp from '@/components/nav.vue'
 import footerComp from '@/components/footer.vue'
 
