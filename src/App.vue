@@ -1,7 +1,7 @@
 <template>
     <nav>
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/admin">Admin</router-link>
     </nav>
     <router-view/>
 </template>
@@ -24,6 +24,9 @@
     --colorFondoElementos: #242527;
     --colorText: #FEFEFE;
     --grisClaro: #646567;
+
+    --rojo: #e74c3c;
+    --verde: #2ecc71;
 }
 html{
     font-size: 62.5%;

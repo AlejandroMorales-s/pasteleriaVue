@@ -44,16 +44,16 @@ export default {
 <style scoped>
     /*Sabores*/
     .card__img1{
-        background-image: url(../../assets/chocolate.jpg);
+        background-image: url(../../../assets/chocolate.jpg);
     }
     .card__img2{
-        background-image: url(../../assets/vainilla.jpg);
+        background-image: url(../../../assets/vainilla.jpg);
     }
     .card__img3{
-        background-image: url(../../assets/fresa.jpg);
+        background-image: url(../../../assets/fresa.jpg);
     }
     .card__img4{
-        background-image: url(../../assets/limon.jpg);
+        background-image: url(../../../assets/limon.jpg);
     }
 
 .card__info{

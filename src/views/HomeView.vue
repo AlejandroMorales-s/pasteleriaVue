@@ -11,9 +11,9 @@
 
 <script>
 // @ is an alias to /src
-import heroComp from '@/components/landingPage/hero.vue'
-import saboresComp from '@/components/landingPage/sabores.vue'
-import adornosComp from '@/components/landingPage/adornos.vue'
+import heroComp from '@/components/home/landingPage/hero.vue'
+import saboresComp from '@/components/home/landingPage/sabores.vue'
+import adornosComp from '@/components/home/landingPage/adornos.vue'
 import footerComp from '@/components/footer.vue'
 
 export default {

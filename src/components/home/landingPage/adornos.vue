@@ -44,15 +44,15 @@ export default {
 
 <style scoped>
     .card__img5{
-        background-image: url(../../assets/vela.jpg);
+        background-image: url(../../../assets/vela.jpg);
     }
     .card__img6{
-        background-image: url(../../assets/vela-num.jpg);
+        background-image: url(../../../assets/vela-num.jpg);
     }
     .card__img7{
-        background-image: url(../../assets/graduacion.jpg);
+        background-image: url(../../../assets/graduacion.jpg);
     }
     .card__img8{
-        background-image: url(../../assets/cumpleaños.jpg);
+        background-image: url(../../../assets/cumpleaños.jpg);
     }
 </style>

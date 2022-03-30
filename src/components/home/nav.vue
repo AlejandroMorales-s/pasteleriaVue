@@ -2,7 +2,7 @@
     <header class="nav__container">
         <div class="contenedor barra">
             <router-link class="logo" to="/">
-                <img class="logo__img" src="../assets/Logo.png" alt="">
+                <img class="logo__img" src="../../assets/Logo.png" alt="">
             </router-link>
             <nav class="nav">
                 <router-link class="nav__enlace nav__enlace__global" to="/orden">Ordena</router-link>

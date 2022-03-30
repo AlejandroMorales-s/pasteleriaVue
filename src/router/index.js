@@ -3,20 +3,14 @@ import HomeView from '../views/HomeView.vue'
 import saboresView from '../views/saboresView.vue'
 import adornosView from '../views/adornosView.vue'
 import ordenView from '../views/ordenView.vue'
+import AdminView from '../views/AdminView.vue'
+import sAdminView from '../views/sAdminView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
     path: '/sabores',
@@ -32,6 +26,16 @@ const routes = [
     path: '/orden',
     name: 'orden',
     component: ordenView
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminView
+  },
+  {
+    path: '/saboresAdmin',
+    name: 'saboresAdmin',
+    component: sAdminView
   }
 ]
 

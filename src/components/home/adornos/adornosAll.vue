@@ -52,22 +52,22 @@ export default {
 
 <style scoped>
 .card__img5{
-    background-image: url(../../assets/vela.jpg);
+    background-image: url(../../../assets/vela.jpg);
 }
 .card__img6{
-    background-image: url(../../assets/vela-num.jpg);
+    background-image: url(../../../assets/vela-num.jpg);
 }
 .card__img7{
-    background-image: url(../../assets/graduacion.jpg);
+    background-image: url(../../../assets/graduacion.jpg);
 }
 .card__img8{
-    background-image: url(../../assets/cumpleaños.jpg);
+    background-image: url(../../../assets/cumpleaños.jpg);
 }
 .card__img13{
-    background-image: url(../../assets/flores.jpg);
+    background-image: url(../../../assets/flores.jpg);
 }
 .card__img14{
-    background-image: url(../../assets/boda.jpg);
+    background-image: url(../../../assets/boda.jpg);
 }
 
 .card__container__grid{

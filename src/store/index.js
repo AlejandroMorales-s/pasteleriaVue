@@ -2,6 +2,10 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    name: "",
+    tel: "",
+    mail: "",
+    text: "",
     adornosPrice: "$4.99",
     saboresPrice: "$24.99",
     adornos: {
@@ -26,9 +30,34 @@ export default createStore({
   getters: {
   },
   mutations: {
+    nameChange(state, name) {
+      state.name = name;
+    },
+    telChange(state, tel) {
+      state.tel = tel;
+    },
+    mailChange(state, mail) {
+      state.mail = mail;
+    },
+    textChange(state, text) {
+      state.text = text;
+    }
   },
   actions: {
+    nameChange({commit}, name) {
+      commit("nameChange", name);
+    },
+    telChange({commit}, tel) {
+      commit("telChange", tel);
+    },
+    mailChange({commit}, mail) {
+      commit("mailChange", mail);
+    },
+    textChange({commit}, text) {
+      commit("textChange", text);
+    }
   },
   modules: {
   }
 })
+

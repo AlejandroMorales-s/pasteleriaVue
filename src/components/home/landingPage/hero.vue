@@ -3,7 +3,7 @@
         <div class="contenedor">
             <div class="barra">
                 <router-link class="logo" to="/">
-                    <img class="logo__img" src="../../assets/Logo.png" alt="">
+                    <img class="logo__img" src="../../../assets/Logo.png" alt="">
                 </router-link>
                 <nav class="nav">
                     <router-link class="nav__enlace btn-width" to="/orden">
@@ -13,6 +13,7 @@
                     </router-link>
                     <router-link class="nav__enlace" to="/adornos">Adornos</router-link>
                     <router-link class="nav__enlace" to="/sabores">Sabores</router-link>
+                    <router-link class="nav__enlace" to="/prueba">prueba</router-link>
                 </nav>
             </div>
         </div>
@@ -69,7 +70,7 @@ export default {
 
 /*Header*/
 .header{
-    background-image: url(../../assets/bg-imagen.png);
+    background-image: url(../../../assets/bg-imagen.png);
     height: 70rem;
     background-size: cover;
     background-repeat: no-repeat;
