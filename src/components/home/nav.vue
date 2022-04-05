@@ -33,4 +33,8 @@ export default {
         padding-bottom: 2.5rem;
     }
 }
+.logo{
+    display: flex;
+    align-items: center;
+}
 </style>

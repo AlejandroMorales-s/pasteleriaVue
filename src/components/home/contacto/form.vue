@@ -15,6 +15,6 @@ export default {
         preguntasComp,
         saboresMix,
         adornosMix,
-    }
+    },
 }  
 </script>

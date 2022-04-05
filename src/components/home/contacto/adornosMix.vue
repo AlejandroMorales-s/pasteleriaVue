@@ -53,13 +53,18 @@
                         </div>
                     </div>
                     <div class="enviar-container">
-                        <input type="submit" value="Enviar" class="btn btn__submit">
+                        <button @click="persist" class="btn btn__submit">Guardar</button>
                     </div>
 </template>
 
 <script>
 export default {
-    name: "adornosMix"
+    name: "adornosMix",
+        methods: {
+        persist() {
+            alert('enviado');
+        }
+    }
 }
 </script>
 

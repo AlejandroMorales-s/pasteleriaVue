@@ -13,7 +13,6 @@
                     </router-link>
                     <router-link class="nav__enlace" to="/adornos">Adornos</router-link>
                     <router-link class="nav__enlace" to="/sabores">Sabores</router-link>
-                    <router-link class="nav__enlace" to="/prueba">prueba</router-link>
                 </nav>
             </div>
         </div>
@@ -37,6 +36,16 @@ export default {
     height: 10rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    .nav__enlace{
+        width: 100%;
+        text-align: center;
+    }
+}
+.logo{
+    display: flex;
     align-items: center;
 }
 .logo__img{

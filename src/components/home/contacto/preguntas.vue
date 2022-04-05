@@ -25,7 +25,7 @@ export default {
     computed: {
         nameChange: {
             get(){
-                return this.$store.state.name;
+                return this.$store.state.form.name;
             },
             set(name){
                 this.$store.dispatch("nameChange",name);
@@ -33,7 +33,7 @@ export default {
         },
         telChange: {
             get(){
-                return this.$store.state.tel;
+                return this.$store.state.form.tel;
             },
             set(tel){
                 this.$store.dispatch("telChange",tel);
@@ -41,7 +41,7 @@ export default {
         },
         mailChange: {
             get(){
-                return this.$store.state.mail;
+                return this.$store.state.form.mail;
             },
             set(mail){
                 this.$store.dispatch("mailChange",mail);
@@ -49,7 +49,7 @@ export default {
         },
         textChange: {
             get(){
-                return this.$store.state.text;
+                return this.$store.state.form.text;
             },
             set(text){
                 this.$store.dispatch("textChange",text);

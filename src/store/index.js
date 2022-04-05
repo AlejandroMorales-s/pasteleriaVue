@@ -2,10 +2,7 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    name: "",
-    tel: "",
-    mail: "",
-    text: "",
+    taste: localStorage.sabor,    
     adornosPrice: "$4.99",
     saboresPrice: "$24.99",
     adornos: {
@@ -25,23 +22,29 @@ export default createStore({
       s6: "Napolitano",
       s7: "Coco",
       s8: "Zanahoria"
+    },
+    form: {
+      name: "",
+      tel: "",
+      mail: "",
+      text: "",
     }
   },
   getters: {
   },
   mutations: {
     nameChange(state, name) {
-      state.name = name;
+      state.form.name = name;
     },
     telChange(state, tel) {
-      state.tel = tel;
+      state.form.tel = tel;
     },
     mailChange(state, mail) {
-      state.mail = mail;
+      state.form.mail = mail;
     },
     textChange(state, text) {
-      state.text = text;
-    }
+      state.form.text = text;
+    },
   },
   actions: {
     nameChange({commit}, name) {
@@ -55,9 +58,8 @@ export default createStore({
     },
     textChange({commit}, text) {
       commit("textChange", text);
-    }
+    },
   },
   modules: {
   }
 })
-

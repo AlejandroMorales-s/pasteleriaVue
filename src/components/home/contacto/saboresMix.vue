@@ -6,7 +6,7 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i1"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+                                    <input v-model="sabor" type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
                                     <label for="chocolate">Chocolate</label>
                                 </div>
 
@@ -15,15 +15,15 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i2"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="red-velvet" name="red-velvet" value="Red Velvet">
-                                    <label for="red-velvet">Red Velvet</label><br>
+                                    <input v-model="sabor" type="checkbox" id="red-velvet" name="red-velvet" value="RedVelvet">
+                                    <label for="red-velvet">Red Velvet</label>
                                 </div>
                             </div>
 
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i3"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
                                     <label for="vainilla">Vainilla</label>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i4"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="zanahoria" name="zanahoria" value="Zanahoria">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="zanahoria" name="zanahoria" value="Zanahoria">
                                     <label for="zanahoria">Zanahoria</label>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i5"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="fresa" name="fresa" value="Fresa">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="fresa" name="fresa" value="Fresa">
                                     <label for="fresa">Fresa</label>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i6"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="limon" name="limon" value="Limon">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="limon" name="limon" value="Limon">
                                     <label for="limon">Limón</label>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i8"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="coco" name="coco" value="Coco">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="coco" name="coco" value="Coco">
                                     <label for="coco">Coco</label>
                                 </div>
                             </div>
@@ -63,18 +63,41 @@
                             <div class="select__sabores__card card">
                                 <div class="select__sabores__card__img card__img i9"></div>
                                 <div class="card__label">
-                                    <input type="checkbox" id="napolitano" name="napolitano" value="Napolitano">
+                                    <input class="checkbox" v-model="sabor" type="checkbox" id="napolitano" name="napolitano" value="Napolitano">
                                     <label for="napolitano">Napolitano</label>
                                 </div>
                             </div>
-
+                        <p>{{sabor}}</p>
                         </div>
     </div>
 </template>
 
 <script>
+
 export default {
-    name: "saboresMix"
+    name: "saboresMix",
+    // Datos
+
+
+
+
+    el: '.card__label',
+    data(){
+        return{
+            sabor: [],
+        }
+    },
+    mounted() {
+        if (localStorage.sabor) {
+        this.sabor = localStorage.sabor;
+        }
+    },
+    watch: {
+        sabor(newSabor) {
+        localStorage.sabor = newSabor;
+        }
+    }
+
 }
 </script>
 
@@ -95,10 +118,21 @@ export default {
         display: block;
     }
 }
+.card__label{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
 .select__sabores__card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 1.5rem;
+}
+@media (max-width: 480px) {
+    .select__sabores__card{
+        margin-bottom: 1.5rem;
+    }
 }
 .i1{
     background-image: url(../../../assets/chocolate.jpg);

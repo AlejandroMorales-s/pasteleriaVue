@@ -1,7 +1,7 @@
 <template>
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/admin">Admin</router-link>
+    <nav class="views">
+        <router-link class="views-btn" to="/">Home</router-link> |
+        <router-link class="views-btn" to="/admin">Admin</router-link>
     </nav>
     <router-view/>
 </template>
@@ -83,6 +83,15 @@ p{
 }
 
 /*Clases*/
+.views{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.views-btn{
+    font-weight: bold;
+    color: var(--negro);
+}
 .contenedor{
     max-width: 120rem;
     width: 90%;
@@ -159,6 +168,11 @@ p{
     border-radius: 0.5rem;
     color: var(--negro);
     font-weight: bold;
+}
+@media (max-width: 480px) {
+    .btn{
+        width: 100%;
+    }
 }
 .btn-nav{
     margin-right: 0;

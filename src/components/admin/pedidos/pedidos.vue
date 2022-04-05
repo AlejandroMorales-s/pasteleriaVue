@@ -11,24 +11,17 @@
                 <div class="pedido-card">
                     <h3 class="pedido-card__title centrar-texto no-margin">Pedido #1</h3>
                     <h4 class="nombre no-margin">Nombre:</h4>
-                    <p class="nombre__info no-margin">{{$store.state.name}}</p>
+                    <p class="nombre__info no-margin">{{$store.state.form.name}}</p>
                     <h4 class="nombre no-margin">Teléfono:</h4>
-                    <p class="nombre__info no-margin">{{$store.state.tel}}</p>
+                    <p class="nombre__info no-margin">{{$store.state.form.tel}}</p>
                     <h4 class="nombre no-margin">Email:</h4>
-                    <p class="nombre__info no-margin">{{$store.state.mail}}</p>
+                    <p class="nombre__info no-margin">{{$store.state.form.mail}}</p>
                     <h4 class="nombre no-margin">Mensaje:</h4>
-                    <p class="nombre__info no-margin">{{$store.state.text}}</p>
+                    <p class="nombre__info no-margin">{{$store.state.form.text}}</p>
                     <div class="pedido-card__sabores">
                         <h4>Sabores</h4>
                         <div class="pedido-card__adornos-grid">
-                            <div class="card">
-                                <div class="s4 card__img"></div>
-                                <h5 class="card__title no-margin">Limón</h5>
-                            </div>
-                            <div class="card">
-                                <div class="s6 card__img"></div>
-                                <h5 class="card__title no-margin">Red Velvet</h5>
-                            </div>
+                            <p>{{$store.state.taste}}</p>
                         </div>
                     </div>
                     <div class="pedido-card__adornos">
@@ -124,7 +117,7 @@
 <script>
 export default {
     // eslint-disable-next-line
-    name: "pedidos"
+    name: "pedidos",
 }
 </script>
 
