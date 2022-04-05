@@ -60,6 +60,22 @@
 <script>
 export default {
     name: "adornosMix",
+        el: '.card__label',
+    data(){
+        return{
+            adorno: [],
+        }
+    },
+    mounted() {
+        if (localStorage.adorno) {
+        this.adorno = localStorage.adorno;
+        }
+    },
+    watch: {
+        adorno(newAdorno) {
+        localStorage.adorno = newAdorno;
+        }
+    }
         methods: {
         persist() {
             alert('enviado');

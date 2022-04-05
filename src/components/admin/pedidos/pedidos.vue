@@ -27,14 +27,7 @@
                     <div class="pedido-card__adornos">
                         <h4>Adornos</h4>
                         <div class="pedido-card__adornos-grid">
-                            <div class="card">
-                                <div class="a4 card__img"></div>
-                                <h5 class="card__title no-margin">Boda</h5>
-                            </div>
-                            <div class="card">
-                                <div class="a6 card__img"></div>
-                                <h5 class="card__title no-margin">Flores</h5>
-                            </div>
+                            <p>{{$store.state.decoration}}</p>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,8 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    taste: localStorage.sabor,    
+    taste: localStorage.sabor,   
+    decoration: localStorage.adorno,
     adornosPrice: "$4.99",
     saboresPrice: "$24.99",
     adornos: {
